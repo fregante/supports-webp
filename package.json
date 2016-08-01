@@ -1,0 +1,53 @@
+{
+  "name": "supports-webp",
+  "version": "0.0.1",
+  "description": "Instantly detect support for WEBP images in the browser in 0.2KB",
+  "license": "MIT",
+  "repository": "bfred-it/supports-webp",
+  "author": "Federico Brigante <bfred-it@users.noreply.github.com> (twitter.com/bfred_it)",
+  "keywords": [
+    "webp",
+    "support",
+    "browser",
+    "detect",
+    "detection",
+    "image",
+    "canvas",
+    "fallback"
+  ],
+  "files": [
+    "dist/supports-webp.common-js.js",
+    "dist/supports-webp.es-modules.js",
+    "dist/supports-webp.browser.js"
+  ],
+  "main": "dist/supports-webp.common-js.js",
+  "jsnext:main": "dist/supports-webp.es-modules.js",
+  "scripts": {
+    "build:js": "bfred-npm-bundler supports-webp supportsWebP",
+    "build": "npm-run-all --silent jsfix build:*",
+    "jsfix": "xo --fix",
+    "watch:build": "onchange 'index.js' -i -- npm run build",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "prepublish": "npm run build",
+    "test": "xo; npm run build"
+  },
+  "devDependencies": {
+    "bfred-npm-bundler": "^7.1.1",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "xo": "^0.13.0"
+  },
+  "xo": {
+    "esnext": true,
+    "env": [
+      "browser"
+    ],
+    "rules": {
+      "prefer-template": 0
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/bfred-it/supports-webp/issues"
+  },
+  "homepage": "https://github.com/bfred-it/supports-webp#readme"
+}
