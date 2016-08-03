@@ -1,2 +1,2 @@
 /*! npm.im/supports-webp */
-var supportsWebP=function(){"use strict";var t=function(t){return t.width=t.height=1,t.toDataURL&&0===t.toDataURL("image/webp").indexOf("data:image/webp")}(document.createElement("canvas"));return t}();
+var supportsWebP=function(){"use strict";var t=document.createElement("canvas");t.width=t.height=1;var a=t.toDataURL&&0===t.toDataURL("image/webp").indexOf("data:image/webp");return a}();
