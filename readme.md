@@ -12,7 +12,7 @@
 npm install --save supports-webp
 ```
 ```js
-import supportsWebP from './supports-webp';
+import supportsWebP from 'supports-webp';
 
 console.log(supportsWebP); // true or false
 if(supportsWebP) {
