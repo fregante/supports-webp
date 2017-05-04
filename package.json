@@ -21,7 +21,6 @@
     "dist/supports-webp.browser.js"
   ],
   "main": "dist/supports-webp.common-js.js",
-  "jsnext:main": "dist/supports-webp.es-modules.js",
   "scripts": {
     "build:js": "bfred-npm-bundler supports-webp supportsWebP",
     "build": "npm-run-all --silent jsfix build:*",
