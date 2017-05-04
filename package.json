@@ -4,7 +4,7 @@
   "description": "Instantly detect support for WEBP images in the browser in 0.2KB",
   "license": "MIT",
   "repository": "bfred-it/supports-webp",
-  "author": "Federico Brigante <bfred-it@users.noreply.github.com> (twitter.com/bfred_it)",
+  "author": "Federico Brigante <github@bfred.it> (bfred.it)",
   "keywords": [
     "webp",
     "support",
