@@ -17,8 +17,7 @@
   ],
   "files": [
     "dist/supports-webp.common-js.js",
-    "dist/supports-webp.es-modules.js",
-    "dist/supports-webp.browser.js"
+    "dist/supports-webp.es-modules.js"
   ],
   "main": "dist/supports-webp.common-js.js",
   "scripts": {

@@ -22,7 +22,7 @@ if(supportsWebP) {
 
 ## Usage without build tools
 
-Copy the content of the file `dist/supports-webp.browser.js` into your code, don't load that file separately, it's too small. Then:
+Copy the content of the file `dist/supports-webp.min.js` into your code, don't load that file separately, it's too small. Then:
 
 ```js
 console.log(window.supportsWebP); // true or false
