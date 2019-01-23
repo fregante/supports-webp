@@ -1,1 +1,2 @@
-export default boolean;
+declare const supportsWebp: boolean;
+export default supportsWebp;
