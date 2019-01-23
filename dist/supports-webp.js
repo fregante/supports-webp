@@ -1,4 +1,4 @@
-/*! npm.im/supports-webp 1.0.5 */
+/*! npm.im/supports-webp 1.0.6 */
 var supportsWebP = (function () {
 'use strict';
 
