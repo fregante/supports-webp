@@ -7,6 +7,7 @@ Thumbs.db
 *.bak
 *.log
 logs
+package-lock.json
 
 *.common-js.js
 *.es-modules.js

@@ -2,9 +2,12 @@
 var supportsWebP = (function () {
 'use strict';
 
-var canvas = typeof document === 'object' ? document.createElement('canvas') : {};
-canvas.width = canvas.height = 1;
-var index = canvas.toDataURL ? canvas.toDataURL('image/webp').indexOf('image/webp') === 5 : false;
+var index = new Promise(function (resolve) {
+	var image = new Image();
+	image.onerror = function () { return resolve(false); };
+	image.onload = function () { return resolve(image.width === 1); };
+	image.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD';
+}).catch(function () { return false; });
 
 return index;
 

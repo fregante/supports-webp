@@ -1,2 +1,2 @@
-declare const supportsWebp: boolean;
-export default supportsWebp;
+declare const supportsWebP: Promise<boolean>;
+export default supportsWebP;

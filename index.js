@@ -1,3 +1,6 @@
-const canvas = typeof document === 'object' ? document.createElement('canvas') : {};
-canvas.width = canvas.height = 1;
-export default canvas.toDataURL ? canvas.toDataURL('image/webp').indexOf('image/webp') === 5 : false;
+export default new Promise(resolve => {
+	const image = new Image();
+	image.onerror = () => resolve(false);
+	image.onload = () => resolve(image.width === 1);
+	image.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD';
+}).catch(() => false);
