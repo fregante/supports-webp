@@ -1,6 +1,6 @@
 {
   "name": "supports-webp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Instantly detect support for WEBP images in the browser in 0.2KB",
   "license": "MIT",
   "repository": "bfred-it/supports-webp",
