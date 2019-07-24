@@ -2,8 +2,8 @@
 
 > Detect support for WEBP images in the browser in 0.3KB
 
-[![gzipped size](https://badges.herokuapp.com/size/github/bfred-it/supports-webp/master/dist/supports-webp.min.js?gzip=true&label=gzipped%20size)](#readme)
-[![Travis build status](https://api.travis-ci.org/bfred-it/supports-webp.svg?branch=master)](https://travis-ci.org/bfred-it/supports-webp)
+[![gzipped size](https://badges.herokuapp.com/size/github/fregante/supports-webp/master/dist/supports-webp.min.js?gzip=true&label=gzipped%20size)](#readme)
+[![Travis build status](https://api.travis-ci.org/fregante/supports-webp.svg?branch=master)](https://travis-ci.org/fregante/supports-webp)
 [![gzipped size](https://img.shields.io/npm/v/supports-webp.svg)](https://www.npmjs.com/package/supports-webp)
 
 ## Usage with npm and ES2015

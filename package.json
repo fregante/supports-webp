@@ -2,19 +2,19 @@
   "name": "supports-webp",
   "version": "2.0.1",
   "description": "Instantly detect support for WEBP images in the browser in 0.2KB",
-  "license": "MIT",
-  "repository": "bfred-it/supports-webp",
-  "author": "Federico Brigante <github@bfred.it> (bfred.it)",
   "keywords": [
-    "webp",
-    "support",
     "browser",
+    "canvas",
     "detect",
     "detection",
+    "fallback",
     "image",
-    "canvas",
-    "fallback"
+    "support",
+    "webp"
   ],
+  "repository": "fregante/supports-webp",
+  "license": "MIT",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "files": [
     "dist/supports-webp.common-js.js",
     "dist/supports-webp.es-modules.js",
@@ -22,21 +22,14 @@
   ],
   "main": "dist/supports-webp.common-js.js",
   "scripts": {
-    "build:js": "bfred-npm-bundler supports-webp supportsWebP",
     "build": "npm-run-all --silent jsfix build:*",
+    "build:js": "bfred-npm-bundler supports-webp supportsWebP",
     "jsfix": "xo --fix",
-    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error",
-    "watch": "npm-run-all --parallel --silent watch:*",
     "prepublish": "npm run build",
+    "test": "tsd-check && npm run build",
     "version": "npm run build; git add dist",
-    "test": "tsd-check && npm run build"
-  },
-  "devDependencies": {
-    "bfred-npm-bundler": "^8.1.0",
-    "npm-run-all": "^4.0.2",
-    "onchange": "^3.2.1",
-    "tsd-check": "^0.5.0",
-    "xo": "^0.18.1"
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error"
   },
   "xo": {
     "env": [
@@ -46,8 +39,11 @@
       "no-multi-assign": 0
     }
   },
-  "bugs": {
-    "url": "https://github.com/bfred-it/supports-webp/issues"
-  },
-  "homepage": "https://github.com/bfred-it/supports-webp#readme"
+  "devDependencies": {
+    "bfred-npm-bundler": "^8.1.0",
+    "npm-run-all": "^4.0.2",
+    "onchange": "^3.2.1",
+    "tsd-check": "^0.5.0",
+    "xo": "^0.18.1"
+  }
 }
