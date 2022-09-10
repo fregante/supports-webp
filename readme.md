@@ -23,16 +23,16 @@ import supportsWebP from 'supports-webp';
 
 supportsWebP.then(supported => {
 	if (supported) {
-		console.log('Load WebP!')
+		console.log('Load WebP!');
 	} else {
-		console.log('Load JPEG!')
+		console.log('Load JPEG!');
 	}
 });
 
 // Or if you can use async/await:
 if (await supportsWebP) {
-	console.log('Load WebP!')
+	console.log('Load WebP!');
 } else {
-	console.log('Load JPEG!')
+	console.log('Load JPEG!');
 }
 ```
