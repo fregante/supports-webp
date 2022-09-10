@@ -1,6 +1,6 @@
 {
 	"name": "supports-webp",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"description": "Instantly detect support for WEBP images in the browser in 0.2KB",
 	"keywords": [
 		"browser",
