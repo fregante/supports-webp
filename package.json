@@ -1,49 +1,38 @@
 {
-  "name": "supports-webp",
-  "version": "2.0.1",
-  "description": "Instantly detect support for WEBP images in the browser in 0.2KB",
-  "keywords": [
-    "browser",
-    "canvas",
-    "detect",
-    "detection",
-    "fallback",
-    "image",
-    "support",
-    "webp"
-  ],
-  "repository": "fregante/supports-webp",
-  "license": "MIT",
-  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
-  "files": [
-    "dist/supports-webp.common-js.js",
-    "dist/supports-webp.es-modules.js",
-    "index.d.ts"
-  ],
-  "main": "dist/supports-webp.common-js.js",
-  "scripts": {
-    "build": "npm-run-all --silent jsfix build:*",
-    "build:js": "bfred-npm-bundler supports-webp supportsWebP",
-    "jsfix": "xo --fix",
-    "prepublish": "npm run build",
-    "test": "tsd-check && npm run build",
-    "version": "npm run build; git add dist",
-    "watch": "npm-run-all --parallel --silent watch:*",
-    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error"
-  },
-  "xo": {
-    "env": [
-      "browser"
-    ],
-    "rules": {
-      "no-multi-assign": 0
-    }
-  },
-  "devDependencies": {
-    "bfred-npm-bundler": "^8.1.0",
-    "npm-run-all": "^4.0.2",
-    "onchange": "^3.2.1",
-    "tsd-check": "^0.5.0",
-    "xo": "^0.18.1"
-  }
+	"name": "supports-webp",
+	"version": "2.0.1",
+	"description": "Instantly detect support for WEBP images in the browser in 0.2KB",
+	"keywords": [
+		"browser",
+		"canvas",
+		"detect",
+		"detection",
+		"fallback",
+		"image",
+		"support",
+		"webp"
+	],
+	"repository": "fregante/supports-webp",
+	"funding": "https://github.com/sponsors/fregante",
+	"license": "MIT",
+	"author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"scripts": {
+		"fix": "xo --fix",
+		"test": "xo && tsd-check"
+	},
+	"xo": {
+		"env": [
+			"browser"
+		]
+	},
+	"devDependencies": {
+		"tsd-check": "^0.5.0",
+		"xo": "^0.52.3"
+	}
 }
